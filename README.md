@@ -2,9 +2,11 @@ HaloGenerator
 =============
 
 TODO:
-	- Organize and Document the code
-	- Instead of adding an arbitrary parameter, use MCMC to get the radius
+	- Organize and Document the code (DONE in newmain.py)
+	- Instead of adding an arbitrary parameter, use MCMC to get the radius (DONE)
+	- Fix units
 
 Notes:
-	- HaloGenerator was tested with NFW code this in the Test folder
+	- New version added in newmain.py, the old version is still in main.py
+	- HaloGenerator was tested with NFW code this in the test folder
 	
