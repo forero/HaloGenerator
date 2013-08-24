@@ -1,7 +1,7 @@
 HaloGenerator
 =============
 
-TODO:
+TODO
 	- Organize and Document the code
 	- Instead of adding an arbitrary parameter, use MCMC to get the radius
 
