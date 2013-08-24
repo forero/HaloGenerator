@@ -1,7 +1,7 @@
 HaloGenerator
 =============
 
-New version added in newmain.py, the old version is still in main.py
+New version added in newmain.py, the old version is still in main.py. 
 HaloGenerator was tested with NFW code this in the test folder
 	
 TODO:
