@@ -29,15 +29,18 @@ def mpr(r):
 # Here is where the Metropolis-Hastings Algorithm begins, first it declares an array for the values of r and appends a value
 
 r_walk = numpy.empty((0))
-r_0 = 1.0
+r_0 = 0.01
 r_walk = numpy.append(r_walk,r_0)
 
 # Then the random walk begins, it does n_interations steps
 
-n_iterations = 500000 
+n_iterations = 150000 
 for i in range(n_iterations):
-    print i
-    r_prime = numpy.random.normal(r_walk[i], 0.1) 
+    print i+1
+    r_prime = numpy.random.normal(r_walk[i], 0.01) 
+    while (r_prime > R_max):
+        r_prime = numpy.random.normal(r_walk[i], 0.01) 
+    
     alpha = mpr(r_prime)/mpr(r_walk[i])
 
     if(alpha >= 1.0):
