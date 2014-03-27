@@ -1,16 +1,17 @@
 import numpy as np, scipy.optimize as opt, pylab
 
-a_array = np.arange(10000,100000,(100000.0-10000.0)/100.0)
-b_array = np.arange(0.1,1,(1-0.1)/100.0)
+a_array = (150000-100000)*np.random.random(10)+100000
+b_array = np.random.random(10)
+print a_array, b_array
+for i in range(10):
 
-for i in range(100):
     a = a_array[i]
     b = b_array[i]
 
     rmax = 10000000.0
     dm = 1.7
 
-    n_points = 1000
+    n_points = 765+i*572
 
     r = np.empty(n_points)
 
