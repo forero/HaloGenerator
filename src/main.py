@@ -1,10 +1,10 @@
-import numpy as np, scipy.optimize as opt, pylab
+import numpy as np, scipy.optimize as opt, pylab, sys
 
 dm =1.7
-n_haloes = 5
+n_haloes = int(sys.argv[1])
 rmax = 4
 
-points = np.arange(500,10000,(10000-500)/n_haloes)
+points = np.arange(500,10000,(10000.0-500.0)/n_haloes)
 
 mtot = dm*points
 b_array = np.random.random(n_haloes)
@@ -19,7 +19,7 @@ for i in range(n_haloes):
     a = a_array[i]
     b = b_array[i]
 
-    n_points = points[i]
+    n_points = int(points[i])
 
     r = np.empty(n_points)
 
